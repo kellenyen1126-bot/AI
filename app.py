@@ -22,7 +22,7 @@ if st.button("Ask"):
         # ---- 5. Send the message to the LLM ----
         with st.spinner("Thinking..."):
             response = client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model="openai/gpt-oss-120b",
                 max_tokens=500,
                 messages=[
                     {"role": "system", "content": "You are a friendly vocabulary assistant. Explain words or answer questions in simple, easy-to-understand English."},
